@@ -1,0 +1,12 @@
+[init]
+	defaultBranch = master
+[user]
+	email = jackson@catfile.me
+	name = Jackson Isaiah
+    signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDSdy7TCbTSnsfJr6V9vias84M5xO4mvTBzBTAYeTkfp
+[gpg]
+	format = ssh
+[gpg "ssh"]
+	program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
+[commit]
+	gpgsign = true
