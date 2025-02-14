@@ -1,0 +1,60 @@
+set hlsearch
+set number
+set incsearch
+set ignorecase
+set smartcase
+set noshowmatch
+set hidden
+set noerrorbells
+set linebreak
+
+set encoding=utf8
+
+set mouse=a
+
+set wrap
+
+set tabstop=4
+set shiftwidth=4
+set expandtab
+
+syntax enable
+
+set autoindent
+
+set lbr
+
+filetype on
+filetype plugin on
+filetype indent on
+
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'wbthomason/packer.nvim'
+Plugin 'vim-airline/vim-airline-themes'
+Plugin 'junegunn/fzf.vim'
+
+Plugin 'morhetz/gruvbox'
+Plugin 'luochen1990/rainbow'
+Plugin 'vim-airline/vim-airline'
+
+call vundle#end()            " required
+filetype plugin indent on    " required
+
+let g:rainbow_active = 1
+
+
+" tabline
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#fnamemod = ':t'
+
+" theme
+let g:airline_theme = 'gruvbox'
+let g:airline_powerline_fonts = 1
+
+set background=dark
+let g:gruvbox_contrast_dark = 'medium'
+colorscheme gruvbox
+
+

@@ -1,0 +1,15 @@
+alias icloud="cd 'Library/Mobile Documents/com~apple~CloudDocs/'"
+
+# bun completions
+[ -s "/Users/jackson/.bun/_bun" ] && source "/Users/jackson/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+# hb
+export PATH="/opt/homebrew/bin:$PATH"
+
+# fzftab
+autoload -U compinit; compinit
+source ~/.zsh/fzf-tab/fzf-tab.plugin.zsh 
