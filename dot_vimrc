@@ -22,6 +22,8 @@ syntax enable
 
 set autoindent
 
+set guifont=Meslo\ LG\ L\ Regular\ for\ Powerline:h14
+
 set lbr
 
 filetype on

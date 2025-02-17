@@ -1,4 +1,5 @@
 alias icloud="cd 'Library/Mobile Documents/com~apple~CloudDocs/'"
+alias vim="/Applications/MacVim.app/Contents/bin/mvim"
 
 # bun completions
 [ -s "/Users/jackson/.bun/_bun" ] && source "/Users/jackson/.bun/_bun"
