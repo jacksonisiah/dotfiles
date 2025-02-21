@@ -1,12 +1,14 @@
+# aliases
 alias icloud="cd 'Library/Mobile Documents/com~apple~CloudDocs/'"
 alias vim="/Applications/MacVim.app/Contents/bin/mvim"
+alias chedit="chezmoi edit --apply"
 
-# bun completions
-[ -s "/Users/jackson/.bun/_bun" ] && source "/Users/jackson/.bun/_bun"
+# ssh
+export SSH_AUTH_SOCK=/Users/jackson/.bitwarden-ssh-agent.sock
 
-# bun
-export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
+# general
+export TERM=xterm-256color
+export EDITOR="vim"
 
 # hb
 export PATH="/opt/homebrew/bin:$PATH"
